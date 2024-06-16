@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Input-Output Processing</title>
+</head>
+<body>
+  <h1>Enter your text:</h1>
+  <form th:action="@{/process}" method="post">
+  <input type="text" name="userInput" />
+  <button type="submit">Process</button>
+</form>
+  <p th:text="${output}">Output: (Nothing entered yet)</p> </body>
+</html>
